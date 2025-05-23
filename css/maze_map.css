@@ -1,0 +1,89 @@
+@import url('./colors.css');
+
+.main-section {
+    background-color: var(--tertiary);
+    box-shadow: -4px -4px 0px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 0px 0px rgba(0, 0, 0, 0.75) inset;
+    width: 60vw;
+    padding: 50px;
+}
+
+.main-section h1 {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.search-results {
+    width: 100%;
+}
+
+.search-results th, td {
+    padding: 10px;
+    box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.25) inset, -2px -2px 0px 0px #000 inset;
+}
+
+td#center {
+    text-align: center;
+}
+
+.search-results th {
+    background-color: var(--table-primary);
+}
+
+.search-results tr:nth-child(even) {
+    background-color: var(--table-primary);
+}
+
+.search-results tr:nth-child(odd) {
+    background-color: var(--table-secondary);
+}
+
+.search-results a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.anime-results {
+    margin-bottom: 50px;
+}
+
+button.add-map-button {
+    font-size: 14px;
+    color: #000;
+    background: var(--secondary);
+    border: none;
+    box-shadow: -4px -4px 0px -2px rgba(0, 0, 0, 0.75) inset, 4px 4px 0px -2px rgba(0, 0, 0, 0.25) inset;
+    transition: 0.3s;
+    padding: 5px;
+    width: 120px;
+}
+
+button.add-map-button:hover {
+    color: #FFF;
+    background: var(--button-hover);
+    box-shadow: -4px -4px 0px -2px rgba(191, 158, 224, 0.75) inset, 4px 4px 0px -2px rgba(191, 158, 224, 0.25) inset;
+    cursor: pointer;
+}
+
+button.add-map-button.added-to-map {
+    background-color: var(--map-button-added);
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.added-to-map:hover {
+    background-color: var(--map-button-hover);
+    color: #fff;
+}
+
+.data {
+    width: 100px;
+}
+
+.button-space {
+    width: 120px;
+}

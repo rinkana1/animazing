@@ -1,0 +1,108 @@
+@import url('./colors.css');
+
+strong {
+    font-weight: 700;
+}
+
+.main-section button, .sidebar button, input::file-selector-button {
+    padding: 0 10px;
+    min-width: 70px;
+    min-height: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    background: var(--secondary);
+    border: none;
+    box-shadow: -4px -4px 0px -2px rgba(0, 0, 0, 0.75) inset, 4px 4px 0px -2px rgba(0, 0, 0, 0.25) inset;
+    transition: 0.3s;
+}
+
+.main-section button:hover, .sidebar button:hover, input::file-selector-button:hover {
+    color: #FFF;
+    background: var(--button-hover);
+    box-shadow: -4px -4px 0px -2px rgba(191, 158, 224, 0.75) inset, 4px 4px 0px -2px rgba(191, 158, 224, 0.25) inset;
+    cursor: pointer;
+}
+
+.main-section {
+    right: 0;
+    background-color: var(--tertiary);
+    box-shadow: -4px -4px 0px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 0px 0px rgba(0, 0, 0, 0.75) inset;
+    width: calc(40vw - 5px);
+    padding: 20px;
+    margin-right: 20vw;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.desc h2 {
+    font-weight: 700;
+}
+
+.sidebar {
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: var(--tertiary);
+    box-sizing: border-box;
+    box-shadow: -4px -4px 0px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 0px 0px rgba(0, 0, 0, 0.75) inset;
+    padding: 20px;
+    min-height: calc(100vh - 50px);
+    width: calc(20vw - 5px);
+    min-width: 200px;
+    margin-left: 20vw;
+}
+
+.sidebar .content-picture {
+    display: block;
+    position: relative;
+    height: 15vw;
+    width: 15vw;
+    margin: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 6px solid var(--tertiary);
+    box-shadow: -6px -6px 0px 0px rgba(0, 0, 0, 0.75) inset, 6px 6px 0px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.sidebar h2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.rating-form {
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.rating-form select {
+    width: 30%;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid ;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.sidebar .center {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+button.add-map-button.added-to-map {
+    background-color: var(--map-button-added);
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.add-map-button.added-to-map:hover {
+    background-color: var(--map-button-hover);
+    color: #fff;
+}

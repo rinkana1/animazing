@@ -1,0 +1,47 @@
+:root {
+    --bg-color: #36303E;
+
+    --text-color: #fff;
+
+    --primary: #6E3EB5;
+    --secondary: #BF9EE0;
+    --tertiary: #40226C;
+
+    --text-input-border: #9E30FF;
+    --button-hover: #1E1E1E;
+
+    --req-met: rgb(171, 255, 171);
+    --error: #FC8383;
+
+    --map-button-added: rgb(108, 153, 108);
+    --map-button-hover: #863636;
+
+    --table-primary: #6E3EB5;
+    --table-secondary: #6F5793;
+
+    /* Navbar buttons do not change in light mode */
+    --navbar-button: #BF9EE0;
+    --navbar-button-hover: #1E1E1E;
+}
+
+[data-theme="light"] {
+    --bg-color: #ddc1f7;
+
+    --text-color: #000;
+
+    --primary: #6E3EB5;
+    --secondary: #663992;
+    --tertiary: #a37bdf;
+
+    --text-input-border: #9E30FF;
+
+    --button-hover: #ccafe4;
+
+    --req-met: rgb(171, 255, 171);
+    --error: #FC8383;
+
+    --map-button-added: rgb(171, 255, 171);
+    --map-button-hover: #FC8383;
+
+    --table-secondary: #b699e2;
+}

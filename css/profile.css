@@ -1,0 +1,167 @@
+@import url('./colors.css');
+
+strong {
+    font-weight: 700;
+}
+
+.main-section button, .sidebar button, input::file-selector-button {
+    padding: 0 10px;
+    min-width: 70px;
+    min-height: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000;
+    background: var(--secondary);
+    border: none;
+    box-shadow: -4px -4px 0px -2px rgba(0, 0, 0, 0.75) inset, 4px 4px 0px -2px rgba(0, 0, 0, 0.25) inset;
+    transition: 0.3s;
+}
+
+.main-section button:hover, .sidebar button:hover, input::file-selector-button:hover {
+    color: #FFF;
+    background: var(--button-hover);
+    box-shadow: -4px -4px 0px -2px rgba(191, 158, 224, 0.75) inset, 4px 4px 0px -2px rgba(191, 158, 224, 0.25) inset;
+    cursor: pointer;
+}
+
+.main-section {
+    right: 0;
+    background-color: var(--tertiary);
+    box-shadow: -4px -4px 0px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 0px 0px rgba(0, 0, 0, 0.75) inset;
+    width: calc(40vw - 5px);
+    padding: 20px;
+    margin-right: 20vw;
+}
+
+.bio {
+    margin-bottom: 20px;
+}
+
+.bio h2 {
+    font-weight: 700;
+}
+
+.bio textarea {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.25) inset, -2px -2px 0px 0px #000 inset;
+    resize: vertical;
+    width: 100%;
+    min-height: 100px;
+}
+
+.bio textarea:read-only {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    min-height: 0;
+    resize: none;
+    cursor: default;
+}
+
+.settings {
+    width: 100%;
+}
+
+.settings table {
+    width: 100%;
+}
+
+.settings td, th {
+    padding: 10px;
+    box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.25) inset, -2px -2px 0px 0px #000 inset;
+}
+
+.settings th {
+    background-color: var(--table-primary);
+}
+
+.settings tr:nth-child(even) {
+    background-color: var(--table-primary);
+}
+
+.settings tr:nth-child(odd) {
+    background-color: var(--table-secondary);
+}
+
+.settings input {
+    font-size: 14px;
+}
+
+.settings input:read-only {
+    color: var(--text-color);
+    background: none;
+    outline: none;
+    border: none;
+    cursor: default;
+}
+
+.sidebar {
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: var(--tertiary);
+    box-sizing: border-box;
+    box-shadow: -4px -4px 0px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 0px 0px rgba(0, 0, 0, 0.75) inset;
+    padding: 20px;
+    min-height: calc(100vh - 50px);
+    width: calc(20vw - 5px);
+    min-width: 200px;
+    margin-left: 20vw;
+}
+
+.sidebar .profile-picture {
+    display: block;
+    position: relative;
+    height: 15vw;
+    width: 15vw;
+    margin: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 6px solid var(--tertiary);
+    box-shadow: -6px -6px 0px 0px rgba(0, 0, 0, 0.75) inset, 6px 6px 0px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.sidebar input {
+    width: 75%;
+}
+
+.sidebar h2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar .username {
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sidebar .center {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.sidebar .log-out {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+}
+
+.pfp-edit {
+    text-align: center;
+}
+
+.pfp-edit button:not(.center, .hidden) {
+    display: inline-block;
+}
+
+.hidden {
+    display: none !important;
+}

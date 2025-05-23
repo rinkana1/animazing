@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import url('./colors.css');
+
+* {
+    font-family: "Tektur", sans-serif;
+}
+
+body {
+    font-family: "Tektur", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin-top: 50px;
+    background-image: url("../static/images/background_maze.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+ul {
+    list-style: disc;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    color: #000;
+}
+
+.form-submit {
+    display: block;
+    width: 140px;
+    height: 30px;
+    margin: 10px auto 0 auto;
+    font-weight: 700;
+    font-size: 14px;
+    background: var(--primary);
+    border: none;
+    color: var(--text-color);
+    box-shadow: 4px 4px 0px -2px rgba(0, 0, 0, 0.25) inset, -4px -4px 0px -2px rgba(0, 0, 0, 0.75) inset;
+    transition: 0.3s;
+}
+
+.form-submit:hover {
+    background: var(--secondary);
+    color: #000;
+    box-shadow: 4px 4px 0px -2px rgba(0, 0, 0, 0.25) inset, -4px -4px 0px -2px rgba(0, 0, 0, 0.75) inset;
+    cursor: pointer;
+}
+
+.form-submit:disabled {
+    background: var(--secondary);
+    color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+.form-text-input {
+    display: block;
+    width: 40vw;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid ;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.main-section {
+    display: block;
+    position: relative;
+    width: 60vw;
+    box-sizing: border-box;
+    min-height: calc(100vh - 50px);
+    margin: 0 auto;
+    padding: 50px 10vw;
+    background-color: var(--bg-color);
+}

@@ -1,0 +1,72 @@
+/* SIGNUP AND LOGIN FORM */
+
+@import url('./colors.css');
+
+.signup-login h1 {
+    position: static;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.signup-form div, .login-form div {
+    display: block;
+    width: 40vw;
+    position: relative;
+    box-sizing: border-box;
+    margin: 20px auto 0 auto;
+}
+
+.signup-label, .login-label {
+    font-size: 16px;
+}
+
+.signup-input, .login-input {
+    position: static;
+    margin-top: 5px;
+}
+
+.error-message {
+    position: static;
+    margin-top: 5px;
+    color: var(--error);
+}
+
+.error-message.hidden {
+    display: none;
+}
+
+.password-info {
+    position: static;
+    margin-top: 5px;
+    color: #878787;
+}
+
+.password-info.hidden {
+    display: none;
+}
+
+.password-info li {
+    margin-left: 15px;
+}
+
+.password-info .pw-req.not-met {
+    color: var(--error);
+}
+
+.password-info .pw-req.met-req {
+    color: var(--req-met);
+}
+
+.signup-form button, .login-form button {
+    position: relative;
+    width: 100px;
+    margin-top: 40px;
+}
+
+.forgot-pw {
+    position: absolute;
+    right: 0;
+    margin-top: 5px;
+}
+
+/* SIGNUP AND LOGIN FORM */
